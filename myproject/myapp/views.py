@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -7,7 +6,6 @@ from .serializers import SingleRollSerializer
 
 import random
 
-# Create your views here.
 class RollsListView(APIView):
     def get(self, request):
         # Randomize roll and save it
