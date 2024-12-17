@@ -12,5 +12,10 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+## How to test it?
+```
+python manage.py test
+```
+
 ## Contributors
 [Tomasz Trzciński](mailto:trzcinski.tomasz.1988@gmail.com)
