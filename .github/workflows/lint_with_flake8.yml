@@ -20,5 +20,4 @@ jobs:
         pip install flake8
     - name: Analysing the code with Flake8
       run: |
-        cd myproject
         flake8 --per-file-ignore="./myproject/myproject/settings.py:E501" .
