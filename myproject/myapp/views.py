@@ -6,10 +6,12 @@ from .serializers import SingleRollSerializer
 
 import random
 
+
 class RollsListView(APIView):
     def get(self, request):
         # Randomize roll and save it
-        randomized_roll : str = "" + (str(random.randint(1,20)))
+        randomized_roll: str
+        randomized_roll = "" + (str(random.randint(1, 20)))
         another_roll = SingleRoll(name={randomized_roll})
         another_roll.save()
 
